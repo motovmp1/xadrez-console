@@ -8,16 +8,18 @@ namespace tabuleiro
 {
     class Tabuleiro
     {
-        public int linhas { get; set; }
-        public int colunas { get; set; }
+        public int Linhas { get; set; }
+        public int Colunas { get; set; }
 
-        private Peca[,] pecas;
+#pragma warning disable IDE0052 // Remove unread private members
+        private readonly Peca[,] PecasObj;
+#pragma warning restore IDE0052 // Remove unread private members
 
         public Tabuleiro(int linhas, int colunas)
         {
-            this.linhas = linhas;
-            this.colunas = colunas;
-            pecas = new Peca[linhas, colunas];
+            this.Linhas = linhas;
+            this.Colunas = colunas;
+            PecasObj = new Peca[linhas, colunas];
 
         }
     }
