@@ -13,7 +13,13 @@ namespace xadrez_console
         static void Main(string[] args)
 #pragma warning restore IDE0060 // Remove unused parameter
         {
+
+            Tabuleiro tabuleiro = new Tabuleiro(8, 8);
+
+
+
             Posicao P = new Posicao(3, 4);
+
 
             Console.WriteLine("Posicao: " + P);
 
